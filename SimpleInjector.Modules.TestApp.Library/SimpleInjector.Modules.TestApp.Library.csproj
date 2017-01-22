@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C437C88D-9401-4044-A92D-2C21DD8104A5}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{7F047531-21C0-4489-9B53-B52036DB7AED}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SimpleInjector.Modules.TestApp</RootNamespace>
-    <AssemblyName>SimpleInjector.Modules.TestApp</AssemblyName>
+    <RootNamespace>SimpleInjector.Modules.TestApp.Library</RootNamespace>
+    <AssemblyName>SimpleInjector.Modules.TestApp.Library</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -47,22 +45,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="IMyClass.cs" />
+    <Compile Include="MyInternalClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestAppModule.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SimpleInjector.Modules.TestApp.Library\SimpleInjector.Modules.TestApp.Library.csproj">
-      <Project>{7F047531-21C0-4489-9B53-B52036DB7AED}</Project>
-      <Name>SimpleInjector.Modules.TestApp.Library</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SimpleInjector.Modules\SimpleInjector.Modules.csproj">
-      <Project>{a1efc684-11d1-4640-b50a-4e0854b47853}</Project>
+      <Project>{A1EFC684-11D1-4640-B50A-4E0854B47853}</Project>
       <Name>SimpleInjector.Modules</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
