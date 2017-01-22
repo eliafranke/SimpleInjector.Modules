@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <description>Extends SimpleInjector with capability to Register and Load Modules from the container. Inherit your module from Module and override Load method. Simply call on your container .RegisterModule&lt;TModule&gt;() - done!</description>
+    <copyright>Copyright 2016 Elia Franke Ltd. All rights reserved.</copyright>
+    <tags>Simple Injector Modules SimpleInjector.Modules SimpleInjector</tags>
+    <iconUrl>http://github.com/eliafranke/SimpleInjector.Modules/simpleinjector.ico</iconUrl>
+  </metadata>
+</package>
