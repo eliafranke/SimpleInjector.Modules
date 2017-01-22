@@ -10,5 +10,6 @@
     <copyright>Copyright 2016 Elia Franke Ltd. All rights reserved.</copyright>
     <tags>Simple Injector Modules SimpleInjector.Modules SimpleInjector</tags>
     <iconUrl>https://raw.githubusercontent.com/eliafranke/SimpleInjector.Modules/master/simpleinjector.ico</iconUrl>
+    <projectUrl>https://github.com/eliafranke/SimpleInjector.Modules</projectUrl>
   </metadata>
 </package>
