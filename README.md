@@ -6,9 +6,11 @@ Simply call on your container .RegisterModule&lt;TModule>() - done!
 
 ### Instructions
 1. Install nuget package via Nuget Package Manager or command line:
+
     ```
     PM> Install-Package SimpleInjector.Modules
     ```
+
 2. Create a **module** class, e.g.:
 
     ```
@@ -20,11 +22,14 @@ Simply call on your container .RegisterModule&lt;TModule>() - done!
         }
     }
     ```
+
 3. Register the module with you **container**
+
 	```
     var container = new Container();
     container.RegisterModule<MyProjectModule>();
     ```
+
 4. Use your container as you are use to, either via constructor injection or ```container.GetInstance<MyClass>()```
 
 
