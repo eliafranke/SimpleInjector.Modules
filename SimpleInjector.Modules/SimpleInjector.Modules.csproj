@@ -46,7 +46,6 @@
   <ItemGroup>
     <Compile Include="ContainerExtensions.cs" />
     <Compile Include="IModule.cs" />
-    <Compile Include="Module.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
